@@ -18,7 +18,7 @@
 \lohead*{Message-Logger}
 \cohead*{VSK}
 \rohead*{Team 3}
-\lofoot*{Projektmanagementplan}
+\lofoot*{Systemspezifikation}
 \cofoot*{}
 \rofoot*{Seite \thepage \hspace{1pt} von \pageref{LastPage}}
 
@@ -26,6 +26,9 @@
 
 % Bilder
 \usepackage{graphicx}
+
+% Farben
+\usepackage{color}
 
 % Hyperlinks
 \usepackage[hidelinks]{hyperref}
@@ -70,7 +73,7 @@
 \begin{document}
 \titlehead{Hochschule Luzern \\ 
 	Technik \& Architektur}
-\subject{Projektmanagementplan}
+\subject{Systemspezifikation}
 \title{Message-Logger}
 \subtitle{Team 3}
 \author{Fabian Wüthrich \\ 
@@ -84,46 +87,39 @@
 
 \tableofcontents
 
-\chapter{Projektorganisation}
+\chapter{Einführung}
 
-\section{Organisationsplan, Rollen \& Zuständigkeiten}
+\section{Versionsverwaltung}
 
-\section{Projektstrukturplan}
+\begin{table}[h!]
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{|c|c|c|p{7cm}|c|}
+		\hline
+		Version & Datum & Autor & Bemerkungen & Status \\ \hline
+		0.1 & 16.02.2015 & F. Wüthrich & Ersterstellung & freigegeben \\ \hline
+	\end{tabular}
+\end{table}
 
-\chapter{Projektführung}
+\section{Systemübersicht}
 
-\section{Rahmenplan}
+\section{Begriffe, Abkürzungen und Referenzen }
 
-\section{Projektkontrolle}
+\chapter{Architektur- und Design-Entscheide}
 
-\section{Risikomanagement}
+\section{Modelle und Sichten}
 
-\section{Projektabschluss}
+\section{Daten (Mengengerüst / Strukturen)}
 
-\chapter{Projektunterstützung}
+\section{Entwurfsentscheide} 
 
-\section{Tools für Entwicklung, Test und Abnahme}
+\chapter{Schnittstellen}
 
-\section{Konfigurationsmanagement}
+\section{Externe Schnittstellen}
 
-\section{Reviewplanung}
+\section{wichtige interne Schnittstellen}
 
-\section{Abnahmeplanung}
+\section{Benutzerschnittstellen} 
 
-\chapter{Testplan}
-
-\section{Testdesign \& Abläufe}
-
-\section{Testfälle}
-
-\appendix
-
-\chapter{Anhang}
-
-\section{Sprintpläne}
-
-\section{Meilensteinberichte}
-
-\section{Reviewprotokolle}
+\chapter{Environment-Anforderungen}
 
 \end{document}
